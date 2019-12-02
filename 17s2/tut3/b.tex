@@ -1,0 +1,30 @@
+\documentclass[a4paper,12pt]{article}
+
+\setlength{\parskip}{\baselineskip} % Spacing between paragraphs
+\setlength{\parindent}{0pt} % Don't indent new paragraphs
+\usepackage{multirow}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+% \usepackage{amssymb}  %$\because$ $\therefore$
+\tikzset{
+	treenode/.style = {align=center, inner sep=0pt, text centered,  font=\small},
+	explored/.style = {treenode, circle, black, draw=black,  text width=1.2em},
+	hid/.style = {treenode, circle, lightgray, dashed},
+	pruned/.style = {treenode, circle, lightgray, dashed, draw=black, font=\sffamily\bfseries, text width=1.2em},
+	expr/.style = {treenode, draw=black},
+	dead/.style = {treenode, draw=black}
+}
+\usepackage{listings}
+\usepackage{floatrow}
+\usepackage{subfig}
+\floatsetup[figure]{style=plain,subcapbesideposition=center}
+
+\usepackage{standalone}
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+
+\begin{document}
+\maketitle
+\newpage
+\section*{Question 1}
+\end{document}

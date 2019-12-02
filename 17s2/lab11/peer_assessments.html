@@ -1,0 +1,23 @@
+{% extends "peer_base.html" %}
+{% block body %}
+<br>
+These assessments have been entered for you:
+	<br>
+	{% for zid in grade_dic %}
+            
+            	{{grade_dic[zid]}} from {{zid}}
+		
+		<br>
+            
+        {% endfor %}
+	{% if leng / 2 == 0 %}
+	<p>
+	median value <b>{{lis[leng/2]}}</b>
+	{% endif %}
+	{% if leng / 2 == 1 %}
+	<p>
+	median value <b>{{lis[leng/2-1]}} {{lis[leng/2+1]}}</b>
+	{% endif %}
+<br>
+
+{% endblock %}

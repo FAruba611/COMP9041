@@ -1,0 +1,9 @@
+{% extends "game_base.html" %}
+{% block body %}
+<form method="POST" action="start">
+    You guessed it! 
+    The number I set is {{ message }}.
+    <br>
+    <input type="submit" value="Replay">
+</form>
+{% endblock %}
